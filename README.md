@@ -1,27 +1,37 @@
 # Ember-reload-gif
-
-This README outlines the details of collaborating on this Ember addon.
+Reload gifs whenever you render them.
 
 ## Installation
+ember-reload-gif is an ember-cli addon. You can install it via:
+* `ember install ember-reload-gif`
 
-* `git clone <repository-url>` this repository
-* `cd ember-reload-gif`
+## Documentation
+Here is a simple example how to use the helper:
+```hbs
+{{reload-gif src='/images/thumb_negative.gif' srcset="/images/thumb_negative.gif 1x, /images/thumb_negative_@2x.gif 2x" alt="thumb-positive" width="700" class="my-gif"}}
+```
+It will output something like:
+```hbs
+<img src='/images/thumb_negative.gif?13' srcset="/images/thumb_negative.gif?13 1x, /images/thumb_negative_@2x.gif?13 2x" alt="thumb-positive" width="700" class="my-gif" />
+```
+The queryParam `?13` will be replaced with a random number each time you render the helper.
+
+## Addon Maintenance
+### Installation
+* `git clone` this repository
 * `npm install`
 * `bower install`
 
-## Running
-
-* `ember serve`
+### Running
+* `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-## Running Tests
-
+### Running Tests
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-## Building
-
+### Building
 * `ember build`
 
 For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
