@@ -1,5 +1,8 @@
 # Ember-reload-gif
-Reload gifs whenever you render them.
+When a gif has an animation, the image will be cached by the browser, when you render the image again (example after redirection of a page),
+the animation will be considered as already played. Therefore, the animation will not be played again.
+This plugin provides a helper that reloads gifs whenever you render them.
+For an example, follow the [#installation-1](installation steps) and run the project locally.
 
 ## Installation
 ember-reload-gif is an ember-cli addon. You can install it via:
