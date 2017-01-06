@@ -1,8 +1,10 @@
 # Ember-reload-gif
 When a gif has an animation, the image will be cached by the browser, when you render the image again (example after redirection of a page),
-the animation will be considered as already played. Therefore, the animation will not be played again.
-This plugin provides a helper that reloads gifs whenever you render them.
-For an example, follow the [#installation-1](installation steps) and run the project locally.
+the animation will be considered as already played.  
+Therefore, the animation will not be played again.  
+This plugin provides a helper that reloads gifs whenever you render them.  
+
+For an example, follow the [installation steps](#installation-1) and run the project locally.
 
 ## Installation
 ember-reload-gif is an ember-cli addon. You can install it via:
@@ -13,11 +15,6 @@ Here is a simple example how to use the helper:
 ```hbs
 {{reload-gif src='/images/thumb_negative.gif' srcset="/images/thumb_negative.gif 1x, /images/thumb_negative_@2x.gif 2x" alt="thumb-positive" width="700" class="my-gif"}}
 ```
-It will output something like:
-```hbs
-<img src='/images/thumb_negative.gif?13' srcset="/images/thumb_negative.gif?13 1x, /images/thumb_negative_@2x.gif?13 2x" alt="thumb-positive" width="700" class="my-gif" />
-```
-The queryParam `?13` will be replaced with a random number each time you render the helper.
 
 ## Addon Maintenance
 ### Installation
