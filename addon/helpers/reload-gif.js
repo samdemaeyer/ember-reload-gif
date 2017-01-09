@@ -14,7 +14,7 @@ export function reloadGif(_, attrs) {
   let options = [];
 
   for (let attr in attrs) {
-    let option = `${attr}=${attrs[attr]}`;
+    let option = `${attr}="${attrs[attr]}"`;
     options.push(option);
   }
 

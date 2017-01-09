@@ -2,6 +2,9 @@
 When a gif has an animation, the image will be cached by the browser, when you render the image again (example after redirection of a page),
 the animation will be considered as already played.  
 Therefore, the animation will not be played again.  
+#### Example:
+![Gif with 2x loop](https://cloud.githubusercontent.com/assets/7160913/21771378/0990163a-d67f-11e6-8511-47f0d4eaf2c3.gif)
+
 This plugin provides a helper that reloads gifs whenever you render them.  
 
 For an example, follow the [installation steps](#installation-1) and run the project locally.
